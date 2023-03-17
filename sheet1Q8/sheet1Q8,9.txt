@@ -1,0 +1,4 @@
+Q8)helps in protecting variables and methods from outside interference.
+Q9)Test.id = 45; 
+id is not a static variable 
+this.id=45;
