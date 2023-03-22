@@ -1,11 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        Account a=new Account(1122,20000);
-        a.setAnnualIntersetRate(4.5);
-        a.withdraw(2500);
-        a.deposit(3000);
-        System.out.println(a.getBalance());
-        System.out.println(a.getMonthlyInterset());
-        System.out.println(a.getDateCreated());
+      GroceryList g=new GroceryList();
+      GroceryItemOrder o=new GroceryItemOrder("chipsy",5.5);
+      o.setQuantity(2);
+      System.out.println(o.getcost());
+      g.add(o);
+      GroceryItemOrder o2=new GroceryItemOrder("bread",10.75);
+        o2.setQuantity(3);
+        System.out.println(o2.getcost());
+      g.add(o2);
+      System.out.println("TotalCost="+g.getTotalCost());
+
     }
 }
